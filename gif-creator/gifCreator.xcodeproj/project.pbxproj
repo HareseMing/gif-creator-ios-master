@@ -24,6 +24,7 @@
 		6019FAD6221402DF0078BADD /* giforce6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6019FAD1221402DF0078BADD /* giforce6.gif */; };
 		6019FAD7221402DF0078BADD /* giforce4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6019FAD2221402DF0078BADD /* giforce4.gif */; };
 		6019FADA221448320078BADD /* GIFPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6019FAD9221448320078BADD /* GIFPresentViewController.m */; };
+		605245A6221BA31F00330A5C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 605245A5221BA31F00330A5C /* libresolv.tbd */; };
 		6057C8E92215136100D3D265 /* GIFIMessageShareActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6057C8E72215136100D3D265 /* GIFIMessageShareActivity.m */; };
 		6057C8ED2215138800D3D265 /* NSObject+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 6057C8EB2215138700D3D265 /* NSObject+Helpers.m */; };
 		60729E5F2216C8AE00E27CD0 /* FUNeedSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 60729E5E2216C8AE00E27CD0 /* FUNeedSwitch.m */; };
@@ -137,6 +138,8 @@
 		6019FAD2221402DF0078BADD /* giforce4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giforce4.gif; sourceTree = "<group>"; };
 		6019FAD8221448310078BADD /* GIFPresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFPresentViewController.h; sourceTree = "<group>"; };
 		6019FAD9221448320078BADD /* GIFPresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFPresentViewController.m; sourceTree = "<group>"; };
+		605245A5221BA31F00330A5C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		605245A7221BA57B00330A5C /* gifCreator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gifCreator.entitlements; sourceTree = "<group>"; };
 		6057C8E62215136100D3D265 /* GIFIMessageShareActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFIMessageShareActivity.h; sourceTree = "<group>"; };
 		6057C8E72215136100D3D265 /* GIFIMessageShareActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFIMessageShareActivity.m; sourceTree = "<group>"; };
 		6057C8EB2215138700D3D265 /* NSObject+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Helpers.m"; sourceTree = "<group>"; };
@@ -240,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605245A6221BA31F00330A5C /* libresolv.tbd in Frameworks */,
 				A515DCD818F7E776005B9299 /* CoreText.framework in Frameworks */,
 				A5DFB79818F57DA2007B068F /* CoreGraphics.framework in Frameworks */,
 				A5DFB79A18F57DA2007B068F /* UIKit.framework in Frameworks */,
@@ -432,6 +436,7 @@
 		A5DFB79418F57DA2007B068F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				605245A5221BA31F00330A5C /* libresolv.tbd */,
 				A515DCD718F7E776005B9299 /* CoreText.framework */,
 				A5DFB79518F57DA2007B068F /* Foundation.framework */,
 				A5DFB79718F57DA2007B068F /* CoreGraphics.framework */,
@@ -447,6 +452,7 @@
 		A5DFB79B18F57DA2007B068F /* gifCreator */ = {
 			isa = PBXGroup;
 			children = (
+				605245A7221BA57B00330A5C /* gifCreator.entitlements */,
 				60729E602216C91A00E27CD0 /* ViewController */,
 				A515DC9B18F7E232005B9299 /* Classes */,
 				A5DFB7A418F57DA2007B068F /* AppDelegate.h */,
@@ -564,11 +570,16 @@
 				TargetAttributes = {
 					6019FAA92213EFA60078BADD = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 28C69G7569;
+						DevelopmentTeam = 99ZAV97S2S;
 						ProvisioningStyle = Automatic;
 					};
 					A5DFB79118F57DA2007B068F = {
-						DevelopmentTeam = 28C69G7569;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					A5DFB7AC18F57DA2007B068F = {
 						TestTargetID = A5DFB79118F57DA2007B068F;
@@ -837,7 +848,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 28C69G7569;
+				DEVELOPMENT_TEAM = 99ZAV97S2S;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -848,7 +859,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gifCreator.app.IMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = gif.Creator.app.imessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -882,7 +893,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 28C69G7569;
+				DEVELOPMENT_TEAM = 99ZAV97S2S;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -892,7 +903,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gifCreator.app.IMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = gif.Creator.app.imessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -977,16 +988,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = gifCreator/gifCreator.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 28C69G7569;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gifCreator/gifCreator-Prefix.pch";
 				INFOPLIST_FILE = "gifCreator/gifCreator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gifCreator.app;
+				PRODUCT_BUNDLE_IDENTIFIER = gif.Creator.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -998,16 +1012,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = gifCreator/gifCreator.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 28C69G7569;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "gifCreator/gifCreator-Prefix.pch";
 				INFOPLIST_FILE = "gifCreator/gifCreator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gifCreator.app;
+				PRODUCT_BUNDLE_IDENTIFIER = gif.Creator.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

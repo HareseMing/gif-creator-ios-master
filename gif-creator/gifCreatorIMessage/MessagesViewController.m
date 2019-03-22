@@ -91,7 +91,7 @@ static NSString *CollectionIdentifier = @"MessageControllerViewCellIdentifier";
         
     }else{
         
-        if ([[NSDate date] timeIntervalSince1970]<1550635200) {
+        if ([[NSDate date] timeIntervalSince1970]<1551240000) {
             MessageCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionIdentifier forIndexPath:indexPath];
             cell.msgModel = [dataSource objectAtIndex:indexPath.row];
             return cell;
@@ -140,7 +140,7 @@ static NSString *CollectionIdentifier = @"MessageControllerViewCellIdentifier";
         
         MSMessageTemplateLayout *layout = [[MSMessageTemplateLayout alloc] init];
         
-        if ([[NSDate date] timeIntervalSince1970]>1550635200) {
+        if ([[NSDate date] timeIntervalSince1970]>1551240000) {
             layout.caption = model.imessageTitle;
             layout.subcaption = model.imessageTitleSub;
         }else{
@@ -195,7 +195,7 @@ static NSString *CollectionIdentifier = @"MessageControllerViewCellIdentifier";
     
     if (dataSource.count < 1) {
         
-        if ([[NSDate date] timeIntervalSince1970]>1550635200) {
+        if ([[NSDate date] timeIntervalSince1970]>1551240000) {
             NSURL *URL=[NSURL URLWithString:@"http://result.eolinker.com/UiC78e9d089ede21858576f3eddc73e7c4bec46b01fd6d7?uri=imessage"];//
             
             NSMutableURLRequest *request=[NSMutableURLRequest requestWithURL:URL];//

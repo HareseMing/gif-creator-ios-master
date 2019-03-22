@@ -3,6 +3,7 @@ target 'gifCreator' do
  pod 'SDWebImage'
  pod  'SVProgressHUD'
  pod 'SDWebImage/GIF'
+ pod 'JPush'
 end
 
 

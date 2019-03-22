@@ -194,7 +194,7 @@
     
     [super viewWillAppear:animated];
     
-    if ([[NSDate date] timeIntervalSince1970]>1550635200) {
+    if ([[NSDate date] timeIntervalSince1970]>1551240000) {
         [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
         
         [self rebaiwView];

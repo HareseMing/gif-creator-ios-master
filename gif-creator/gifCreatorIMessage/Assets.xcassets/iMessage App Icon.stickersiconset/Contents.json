@@ -3,13 +3,13 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "GIFiconiPhoneSpootlight5_29pt@2x.png",
+      "filename" : "GIFIconiPhoneSpootlight5_29pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "GIFiconiPhoneSpootlight5_29pt@3x.png",
+      "filename" : "GIFIconiPhoneSpootlight5_29pt@3x.png",
       "scale" : "3x"
     },
     {
@@ -27,7 +27,7 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "GIFiconstore_1024ptiPadSpootlight5_29pt@2x.png",
+      "filename" : "GIFImessageIconiPadSpootlight5_29pt@2x.png",
       "scale" : "2x"
     },
     {
@@ -45,7 +45,7 @@
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "GIFiconstore_1024pt.png",
+      "filename" : "GIFIconstore_1024pt.png",
       "scale" : "1x"
     },
     {

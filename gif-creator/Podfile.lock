@@ -1,5 +1,8 @@
 PODS:
   - FLAnimatedImage (1.0.12)
+  - JCore (1.2.6)
+  - JPush (3.1.2):
+    - JCore (~> 1.2.6)
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
@@ -9,6 +12,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - JPush
   - SDWebImage
   - SDWebImage/GIF
   - SVProgressHUD
@@ -16,14 +20,18 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FLAnimatedImage
+    - JCore
+    - JPush
     - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JCore: cae516dd2bf1a73b578ce6e1065abd49e709e0f7
+  JPush: d0cead70ba223a6a3b52749899ebda830dfbc49a
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 6ff8b5e9a8d0308b38947fe738693ed6b0f1b0da
+PODFILE CHECKSUM: 7332d0d511c80cb3612d2b13e8c8d4642c115a0a
 
 COCOAPODS: 1.5.3
