@@ -1,16 +1,15 @@
 GIF Fast
 ===============
 
-GIF quick production software.
+GeneratingGIF quick production software.
 
 A GIF production tool software, you can choose from the album need to produce content, convenient, fast.
 
 GIF making method:
 
-- select several images to make a GIF.
+select several images to make a GIF.
 
-- you can share GIF images after making.
-
+you can share GIF images after making.
 
 A simple and convenient mobile phone GIF application.
 
